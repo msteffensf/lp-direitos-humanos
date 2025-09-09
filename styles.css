@@ -1,0 +1,311 @@
+/* ---------- RESET BÁSICO ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- BODY ---------- */
+html,
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  color: #222;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+  /* corta scroll lateral */
+}
+
+/* ---------- HEADER ---------- */
+header.topo {
+  text-align: center;
+  background: linear-gradient(90deg, #004aad, #129047);
+  color: #fff;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header .logo {
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+header .data {
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+  background: #fff;
+  gap: 30px;
+}
+
+.hero .texto {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+
+.hero .texto h2 {
+  font-size: 26px;
+  color: #004aad;
+  margin-bottom: 15px;
+}
+
+.hero .texto p {
+  font-size: 18px;
+  color: #555;
+}
+
+.hero img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- LINHA DO TEMPO ---------- */
+.linha-do-tempo {
+  background: #f8f8f8;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.linha-do-tempo h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #004aad;
+}
+
+.linha-do-tempo .eventos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.evento {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  flex: 1 1 200px;
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.evento:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- CONTEÚDO ---------- */
+.conteudo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  gap: 40px;
+}
+
+.artigos,
+.personalidades {
+  flex: 1 1 350px;
+  text-align: center;
+}
+
+.artigos img {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.personalidades .cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card,
+.link {
+  background: #004aad;
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  min-width: 140px;
+  max-width: 200px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background 0.3s;
+  text-align: center;
+}
+
+.card:hover,
+.link:hover {
+  transform: translateY(-5px);
+  background: #129047;
+}
+
+.artigos h2 {
+  color: #004aad;
+}
+
+.conteudo-descri {
+  max-width: 1000px;
+  width: 90%;
+  margin: 20px auto;
+  background: linear-gradient(135deg, #004aad, #129047);
+  border-radius: 12px;
+  padding: 25px;
+  /* respiro interno padrão */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.descrição {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.6;
+  text-align: justify;
+  /* alinhamento melhor pra leitura */
+}
+
+/* ---------- MAPA ---------- */
+.mapa {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f0f0f0;
+}
+
+.mapa img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- ATIVIDADES ---------- */
+.atividades {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+}
+
+.atividades h3 {
+  font-size: 24px;
+  color: #004aad;
+  margin-bottom: 15px;
+}
+
+.atividades .botao {
+  display: inline-block;
+  background: #129047;
+  color: #fff;
+  padding: 15px 35px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.atividades .botao:hover {
+  background: #004aad;
+  transform: scale(1.05);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #004aad;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  .conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personalidades .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .evento {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  .hero .texto h2 {
+    font-size: 20px;
+  }
+
+  .hero .texto p {
+    font-size: 16px;
+  }
+
+  .botao {
+    width: 100%;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conteudo-descri {
+    width: 95%;
+    /* ocupa quase a tela mas com respiro */
+    padding: 15px;
+    /* menos espaçamento interno */
+    border-radius: 10px;
+  }
+
+  .descrição {
+    font-size: 16px;
+    /* texto mais compacto */
+    line-height: 1.5;
+    /* altura da linha equilibrada */
+ }  
+}
